@@ -18,7 +18,7 @@ public class InstructorManager
         _instructorDal = instructorDal;
     }
 
-    List<Instructor> GetAll()
+    public List<Instructor> GetAll()
     {
         InstructorDal instructorDal = new InstructorDal();
         return instructorDal.GetAll();

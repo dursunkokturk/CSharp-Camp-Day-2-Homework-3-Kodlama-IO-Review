@@ -25,13 +25,12 @@ public class InstructorDal:IInstructorDal
         instructors = new List<Instructor> { instructor1, instructor2 };
     }
 
-    public void Add(Instructor instructor)
-    {
-        instructors.Add(instructor);
-    }
-
     public List<Instructor> GetAll()
     {
         return instructors;
+    }
+    public void Add(Instructor instructor)
+    {
+        instructors.Add(instructor);
     }
 }

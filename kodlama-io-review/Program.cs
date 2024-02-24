@@ -16,6 +16,8 @@ for (int i = 0; i < courses.Count; i++)
 
 Console.WriteLine("");
 
+
+/*
 InstructorManager instructorManager = new(new InstructorDal());
 List<Instructor> instructors = instructorManager.GetAll();
 
@@ -27,6 +29,8 @@ for (int i = 0; i < instructors.Count; i++)
 
 Console.WriteLine("");
 
+
+
 CategoryManager categoryManager = new(new CategoryDal());
 List<Category> categories = categoryManager.GetAll();
 Console.WriteLine("Kodlama.io Tum Kategori Bilgileri");
@@ -34,28 +38,4 @@ for (int i = 0; i < categories.Count; i++)
 {
     Console.WriteLine(categories[i].CategoryName);
 }
-
-
-
-
-
-
-
-/*
- 
-Java + React - Yazılım Geliştirici Yetiştirme Kampı
-Engin Demirog
-
-Java - Yazılım Geliştirici Yetiştirme Kampı
-Engin Demirog
-
-Python & Selenium - Yazılım Geliştirici Yetiştirme Kampı
-Halit Enes Kalaycı
-
-C# - Yazılım Geliştirici Yetiştirme Kampı
-Engin Demirog
-
-Programlamaya Giriş için Temel Kurs
-Engin Demirog
- 
- */
+*/

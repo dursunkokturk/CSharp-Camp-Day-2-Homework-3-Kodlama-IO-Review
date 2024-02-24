@@ -1,5 +1,6 @@
 ﻿
 using DataAccess.Abstracts;
+using DataAccess.Concretes;
 using Entities.Concretes;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,6 @@ public class CategoryManager
     public List<Category> GetAll()
     {
         CategoryDal categoryDal = new CategoryDal();
-        return categoryDal;
+        return _categoryDal.GetAll();
     }
 }

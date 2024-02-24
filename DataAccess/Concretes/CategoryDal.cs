@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concretes;
 
-internal class CategoryDal:ICategoryDal
+public class CategoryDal:ICategoryDal
 {
     List<Category> categories;
 
@@ -19,14 +19,14 @@ internal class CategoryDal:ICategoryDal
         category1.CategoryName = "Java";
 
         Category category2 = new Category();
-        category2.Id = 1;
+        category2.Id = 2;
         category2.CategoryName = "Python";
 
         Category category3 = new Category();
-        category3.Id = 1;
+        category3.Id = 3;
         category3.CategoryName = "Programlama";
 
-        categories =new List<Category> { category1, category2, category3 };
+        categories = new List<Category> { category1, category2, category3 };
     }
 
     public List<Category> GetAll()
@@ -37,5 +37,15 @@ internal class CategoryDal:ICategoryDal
     public void Add(Category category)
     {
         categories.Add(category);
+    }
+
+    public void Update(Category category)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Delete(Category category)
+    {
+        categories.Remove(category);
     }
 }

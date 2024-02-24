@@ -50,4 +50,18 @@ public class CourseDal:ICourseDal
     {
         courses.Add(course);
     }
+
+    public void Update(Course course)
+    {
+        
+        Course updateCourse = course.FirstOrDefault(crs => crs.CourseId == course.CourseId);
+        updateCourse.CourseName = course.CourseName;
+        updateCourse.CourseDescription = course.CourseDescription;
+        
+    }
+
+    public void Delete(Course course)
+    {
+        courses.Remove(course);
+    }
 }
