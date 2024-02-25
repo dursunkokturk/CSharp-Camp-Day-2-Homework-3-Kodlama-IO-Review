@@ -8,6 +8,11 @@ namespace Entities.Concretes;
 
 public class Instructor
 {
-    public int Id { get; set; }
+    public int InstructorId { get; set; }
     public string InstructorName { get; set; }
+
+    public Course FirstOrDefault(Func<object, bool> value)
+    {
+        throw new NotImplementedException();
+    }
 }

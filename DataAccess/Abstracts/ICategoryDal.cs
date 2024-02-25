@@ -10,7 +10,7 @@ namespace DataAccess.Abstracts;
 public interface ICategoryDal
 {
     List<Category> GetAll();
-    void Add(Category category);
-    void Update(Category category);
-    void Delete(Category category);
+    void AddCategory(Category category);
+    void UpdateCategory(Category category);
+    void DeleteCategory(Category category);
 }
